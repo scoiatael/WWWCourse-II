@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Zadanie1</title>
+  <meta http-equiv="Content-Type"
+    content="text/html; charset=utf-8"/>
+</head>
+<body>
+  <form method="POST" enctype="text/plain">
+    First name (maxlength=10): <input maxlength="10" type="text" name="fname" /><br />
+    Last name (no maxlength): <input type="text" name="lname" /><br />
+    About me: <br /><textarea rows="4" cols="50">
+      TextArea with 4 rows, 50 cols. Unlimited text length.
+    </textarea> <br />
+    My car: <select name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="daewoo">Daewoo</option>
+      <option value="fiat">Fiat</option>
+      <option value="kamaz">Kamaz</option>
+    </select> <br />
+    <h3> Questionnaire </h3>
+    <input type="checkbox" name="vehicle" value="Bike" />I have a bike<br/>
+    <input type="checkbox" name="vehicle" value="Bike" />I have a ball<br/>
+    <input type="checkbox" name="vehicle" value="Bike" />I have a house<br/> <br />
+    <div style="border:2px solid;border-radius:3px;width:200px">
+    <input type="radio" name="sex" value="male" />Female<br />
+    <input type="radio" name="sex" value="male" />Male<br />
+    </div>
+    <br />
+    <div style="border:2px solid;border-radius:3px;width:200px">
+    <input type="radio" name="foreigner" value="female" />I'm a foreigner<br />
+    <input type="radio" name="foreigner" value="female" />I'm not A foreigner<br />
+    </div>
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>
