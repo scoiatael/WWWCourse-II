@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+/* unvisited link */
+a:link {
+      color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+      color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+      color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+      color: #0000FF;
+}
+
+input:focus {
+      background-color: yellow;
+}
+
+span *:first-child {
+      color: blue;
+}
+
+div::after {
+      content: " - Remember this";
+}
+
+div::before {
+      content: " Before div:";
+}
+
+div:first-line {
+  background-color: aquamarine;
+}
+
+div:first-letter {
+  color: green;
+  font-size: 30px;
+}
+
+p:lang(it) {
+      background: yellow;
+}
+    </style>
+  </head>
+  <body>
+
+    <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+    <span>I am a <i>strong</i> man. I am a <i>strong</i> man.</span>
+    <p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+    <p lang="it"> Lang: it </p>
+
+
+    <form action="form_action.asp" method="get">
+        First name: <input type="text" name="fname"/><br/>
+        Last name: <input type="text" name="lname"/><br/>
+        <input type="submit" value="Submit"/>
+    </form>
+
+    <p><b>Note:</b> IE8 supports the :focus pseudo-class only if a !DOCTYPE is specified.</p>
+
+    <div> Test line1 <br/> Test line2 </div>
+
+  </body>
+</html>
+
