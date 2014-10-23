@@ -1,0 +1,378 @@
+html {
+  background-color: #ebebeb;
+}
+
+body {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ebebeb !important;
+  background-image: none !important;
+}
+
+.page-container {
+  background-color: #ebebeb;
+  border: none;
+}
+
+#container {
+  border: 0px;
+  width: 913px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  img {
+    border: 0;
+  }
+}
+
+/* ======================== mainArea ======================== */
+
+#mainArea {
+  width: 913px;
+  margin-top: 20px;
+  select {
+    font-size: 13px;
+    font-family: Arial, Helvetica, Sans-Serif;
+  }
+  background: url(img/mainBg.gif) no-repeat;
+  overflow: hidden;
+}
+
+#main_abv {
+  float: left;
+  width: 646px;
+  height: 252px;
+}
+
+#main_volvoBAs {
+  padding: 0px 10px 0px 13px;
+  z-index: 3000;
+  position: relative;
+  /* IE8beta fix */
+}
+
+/* ------------------------ header ------------------------ */
+
+#header {
+  height: 70px;
+  position: relative;
+  line-height: 27px;
+  span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #666;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    #header span {
+      padding-top: 0;
+    }
+  }
+}
+
+/* ------------------------ main_volvoGroup ------------------------ */
+
+#main_volvoGroup {
+  position: relative;
+  padding: 20px 15px 6px 30px;
+  a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    margin: 0;
+  }
+}
+
+#main_volvoGroupLink {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  white-space: pre;
+  position: absolute;
+  bottom: 5px;
+  left: 28px;
+}
+
+#main_volvoGroupSelect select {
+  position: absolute;
+  bottom: 5px;
+  right: 16px;
+  width: 250px;
+}
+
+/* ------------------------ main_vcc ------------------------ */
+
+#main_vcc {
+  padding-left: 22px;
+  float: left;
+  div {
+    height: 40px;
+    position: relative;
+  }
+  .entryWrap02 {
+    padding-bottom: 1px;
+    position: relative;
+    /* IE8beta fix */
+  }
+}
+
+#main_vccLink {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #666;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  white-space: pre;
+  line-height: 27px;
+}
+
+/* ------------------------ entries ------------------------ */
+
+.entryImg {
+  background-image: none;
+}
+
+.entryWrap {
+  position: relative;
+  width: 207px;
+  float: left;
+  height: 92px;
+  a {
+    cursor: pointer;
+  }
+}
+
+.entryObj {
+  width: 202px;
+  height: 89px;
+  display: block;
+  background: url(img/entryBg.gif);
+  padding: 5px 0 0 5px;
+}
+
+.entryWrap select {
+  position: absolute;
+  left: 15px;
+  bottom: 42px;
+  display: none;
+  width: 176px;
+}
+
+.entryImg {
+  display: block;
+  width: 196px;
+  height: 65px;
+}
+
+.entryLink {
+  display: block;
+  width: 196px;
+  height: 18px;
+  background-color: #4bf;
+  text-decoration: none;
+  background: white 0px -65px no-repeat;
+  span {
+    position: absolute;
+    top: -9999px;
+  }
+}
+
+/* ------------------------ entry specifics ------------------------ */
+
+.e1 {
+  .entryImg {
+    background-position: -196px 0px;
+  }
+  .entryLink {
+    background-position: -196px -65px;
+  }
+}
+
+.e2 {
+  .entryImg {
+    background-position: -392px 0px;
+  }
+  .entryLink {
+    background-position: -392px -65px;
+  }
+}
+
+.e3 {
+  .entryImg {
+    background-position: -588px 0px;
+  }
+  .entryLink {
+    background-position: -588px -65px;
+  }
+}
+
+.e4 {
+  .entryImg {
+    background-position: -784px 0px;
+  }
+  .entryLink {
+    background-position: -784px -65px;
+  }
+}
+
+.e5 {
+  .entryImg {
+    background-position: -980px 0px;
+  }
+  .entryLink {
+    background-position: -980px -65px;
+  }
+}
+
+#main_vcc {
+  .entryWrap {
+    width: 233px;
+    height: 185px;
+  }
+  .entryObj {
+    width: 228px;
+    height: 180px;
+    background-position: -207px 0px;
+  }
+  .entryLink {
+    width: 221px;
+    height: 175px;
+    background-position: 0 0;
+  }
+  .entryImg {
+    position: absolute;
+    top: 162px;
+    left: 5px;
+    width: 221px;
+    height: 17px;
+    background-position: 0 -174px;
+    /*  opacity: 1;display: block; */
+  }
+}
+
+/* ------------------------ entry mosueover ------------------------ */
+
+*:hover {
+  .entryObj {
+    opacity: 0.4;
+    filter: alpha(opacity = 40);
+  }
+  .active {
+    .entryObj {
+      opacity: 1;
+      filter: alpha(opacity = 100);
+    }
+    .entryImg {
+      opacity: 0.4;
+      filter: alpha(opacity = 40);
+    }
+    select {
+      display: block;
+    }
+  }
+  #main_vcc {
+    .entryLink {
+      opacity: 0.4;
+      filter: alpha(opacity = 40);
+    }
+    .active .entryLink {
+      opacity: 1;
+      filter: alpha(opacity = 100);
+    }
+  }
+}
+
+.entryActive {
+  .e0 .entryLink {
+    background-position: 0px -82px;
+  }
+  .e1 .entryLink {
+    background-position: -196px -82px;
+  }
+  .e2 .entryLink {
+    background-position: -392px -82px;
+  }
+  .e3 .entryLink {
+    background-position: -588px -82px;
+  }
+  .e4 .entryLink {
+    background-position: -784px -82px;
+  }
+  .e5 .entryLink {
+    background-position: -980px -82px;
+  }
+}
+
+#main_vcc .entryActive .entryImg {
+  display: none;
+}
+
+/* ======================== bannerArea ======================== */
+
+.bannerArea {
+  clear: both;
+  margin-top: 8px;
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.banner-area-text {
+  position: relative;
+  height: 0;
+}
+
+.banner-area-text-inside {
+  position: absolute;
+  top: -20px;
+  color: #f8f8f8;
+  z-index: 3100;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 28px;
+}
+
+.bannerArea.type3 {
+  img {
+    width: 301px;
+    height: 64px;
+  }
+  border: none;
+}
+
+
+#introText p {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 15px;
+  line-height: 1.6em;
+}
+
+.main_abv select {
+  display: none;
+  &:hover {
+    display: initial;
+  }
+}
+
+#mainArea {
+  margin: 0 auto;
+}
+
+.entryImg, .entryLink {
+  background-image: url(img/entriesnew_%201176x82.jpg);
+}
+
+#main_vcc {
+  .entryImg, .entryLink {
+    background-image: url(img/Volvo%20Cars.JPG);
+  }
+}

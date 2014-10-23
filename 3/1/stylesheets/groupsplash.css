@@ -1,0 +1,414 @@
+/* line 1, ../scss/groupsplash.scss */
+html {
+  background-color: #ebebeb;
+}
+
+/* line 5, ../scss/groupsplash.scss */
+body {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ebebeb !important;
+  background-image: none !important;
+}
+
+/* line 12, ../scss/groupsplash.scss */
+.page-container {
+  background-color: #ebebeb;
+  border: none;
+}
+
+/* line 17, ../scss/groupsplash.scss */
+#container {
+  border: 0px;
+  width: 913px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* line 24, ../scss/groupsplash.scss */
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* line 27, ../scss/groupsplash.scss */
+a img {
+  border: 0;
+}
+
+/* ======================== mainArea ======================== */
+/* line 34, ../scss/groupsplash.scss */
+#mainArea {
+  width: 913px;
+  margin-top: 20px;
+  background: url(img/mainBg.gif) no-repeat;
+  overflow: hidden;
+}
+/* line 37, ../scss/groupsplash.scss */
+#mainArea select {
+  font-size: 13px;
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+
+/* line 45, ../scss/groupsplash.scss */
+#main_abv {
+  float: left;
+  width: 646px;
+  height: 252px;
+}
+
+/* line 51, ../scss/groupsplash.scss */
+#main_volvoBAs {
+  padding: 0px 10px 0px 13px;
+  z-index: 3000;
+  position: relative;
+  /* IE8beta fix */
+}
+
+/* ------------------------ header ------------------------ */
+/* line 60, ../scss/groupsplash.scss */
+#header {
+  height: 70px;
+  position: relative;
+  line-height: 27px;
+}
+/* line 64, ../scss/groupsplash.scss */
+#header span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #666;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 700px;
+}
+/* line 73, ../scss/groupsplash.scss */
+#header span #header span {
+  padding-top: 0;
+}
+
+/* ------------------------ main_volvoGroup ------------------------ */
+/* line 81, ../scss/groupsplash.scss */
+#main_volvoGroup {
+  position: relative;
+  padding: 20px 15px 6px 30px;
+}
+/* line 84, ../scss/groupsplash.scss */
+#main_volvoGroup a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  margin: 0;
+}
+
+/* line 92, ../scss/groupsplash.scss */
+#main_volvoGroupLink {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  white-space: pre;
+  position: absolute;
+  bottom: 5px;
+  left: 28px;
+}
+
+/* line 102, ../scss/groupsplash.scss */
+#main_volvoGroupSelect select {
+  position: absolute;
+  bottom: 5px;
+  right: 16px;
+  width: 250px;
+}
+
+/* ------------------------ main_vcc ------------------------ */
+/* line 111, ../scss/groupsplash.scss */
+#main_vcc {
+  padding-left: 22px;
+  float: left;
+}
+/* line 114, ../scss/groupsplash.scss */
+#main_vcc div {
+  height: 40px;
+  position: relative;
+}
+/* line 118, ../scss/groupsplash.scss */
+#main_vcc .entryWrap02 {
+  padding-bottom: 1px;
+  position: relative;
+  /* IE8beta fix */
+}
+
+/* line 125, ../scss/groupsplash.scss */
+#main_vccLink {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #666;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  white-space: pre;
+  line-height: 27px;
+}
+
+/* ------------------------ entries ------------------------ */
+/* line 138, ../scss/groupsplash.scss */
+.entryImg {
+  background-image: none;
+}
+
+/* line 142, ../scss/groupsplash.scss */
+.entryWrap {
+  position: relative;
+  width: 207px;
+  float: left;
+  height: 92px;
+}
+/* line 147, ../scss/groupsplash.scss */
+.entryWrap a {
+  cursor: pointer;
+}
+
+/* line 152, ../scss/groupsplash.scss */
+.entryObj {
+  width: 202px;
+  height: 89px;
+  display: block;
+  background: url(img/entryBg.gif);
+  padding: 5px 0 0 5px;
+}
+
+/* line 160, ../scss/groupsplash.scss */
+.entryWrap select {
+  position: absolute;
+  left: 15px;
+  bottom: 42px;
+  display: none;
+  width: 176px;
+}
+
+/* line 168, ../scss/groupsplash.scss */
+.entryImg {
+  display: block;
+  width: 196px;
+  height: 65px;
+}
+
+/* line 174, ../scss/groupsplash.scss */
+.entryLink {
+  display: block;
+  width: 196px;
+  height: 18px;
+  background-color: #4bf;
+  text-decoration: none;
+  background: white 0px -65px no-repeat;
+}
+/* line 181, ../scss/groupsplash.scss */
+.entryLink span {
+  position: absolute;
+  top: -9999px;
+}
+
+/* ------------------------ entry specifics ------------------------ */
+/* line 190, ../scss/groupsplash.scss */
+.e1 .entryImg {
+  background-position: -196px 0px;
+}
+/* line 193, ../scss/groupsplash.scss */
+.e1 .entryLink {
+  background-position: -196px -65px;
+}
+
+/* line 199, ../scss/groupsplash.scss */
+.e2 .entryImg {
+  background-position: -392px 0px;
+}
+/* line 202, ../scss/groupsplash.scss */
+.e2 .entryLink {
+  background-position: -392px -65px;
+}
+
+/* line 208, ../scss/groupsplash.scss */
+.e3 .entryImg {
+  background-position: -588px 0px;
+}
+/* line 211, ../scss/groupsplash.scss */
+.e3 .entryLink {
+  background-position: -588px -65px;
+}
+
+/* line 217, ../scss/groupsplash.scss */
+.e4 .entryImg {
+  background-position: -784px 0px;
+}
+/* line 220, ../scss/groupsplash.scss */
+.e4 .entryLink {
+  background-position: -784px -65px;
+}
+
+/* line 226, ../scss/groupsplash.scss */
+.e5 .entryImg {
+  background-position: -980px 0px;
+}
+/* line 229, ../scss/groupsplash.scss */
+.e5 .entryLink {
+  background-position: -980px -65px;
+}
+
+/* line 235, ../scss/groupsplash.scss */
+#main_vcc .entryWrap {
+  width: 233px;
+  height: 185px;
+}
+/* line 239, ../scss/groupsplash.scss */
+#main_vcc .entryObj {
+  width: 228px;
+  height: 180px;
+  background-position: -207px 0px;
+}
+/* line 244, ../scss/groupsplash.scss */
+#main_vcc .entryLink {
+  width: 221px;
+  height: 175px;
+  background-position: 0 0;
+}
+/* line 249, ../scss/groupsplash.scss */
+#main_vcc .entryImg {
+  position: absolute;
+  top: 162px;
+  left: 5px;
+  width: 221px;
+  height: 17px;
+  background-position: 0 -174px;
+  /*  opacity: 1;display: block; */
+}
+
+/* ------------------------ entry mosueover ------------------------ */
+/* line 263, ../scss/groupsplash.scss */
+*:hover .entryObj {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+/* line 268, ../scss/groupsplash.scss */
+*:hover .active .entryObj {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 272, ../scss/groupsplash.scss */
+*:hover .active .entryImg {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+/* line 276, ../scss/groupsplash.scss */
+*:hover .active select {
+  display: block;
+}
+/* line 281, ../scss/groupsplash.scss */
+*:hover #main_vcc .entryLink {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+/* line 285, ../scss/groupsplash.scss */
+*:hover #main_vcc .active .entryLink {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 293, ../scss/groupsplash.scss */
+.entryActive .e0 .entryLink {
+  background-position: 0px -82px;
+}
+/* line 296, ../scss/groupsplash.scss */
+.entryActive .e1 .entryLink {
+  background-position: -196px -82px;
+}
+/* line 299, ../scss/groupsplash.scss */
+.entryActive .e2 .entryLink {
+  background-position: -392px -82px;
+}
+/* line 302, ../scss/groupsplash.scss */
+.entryActive .e3 .entryLink {
+  background-position: -588px -82px;
+}
+/* line 305, ../scss/groupsplash.scss */
+.entryActive .e4 .entryLink {
+  background-position: -784px -82px;
+}
+/* line 308, ../scss/groupsplash.scss */
+.entryActive .e5 .entryLink {
+  background-position: -980px -82px;
+}
+
+/* line 313, ../scss/groupsplash.scss */
+#main_vcc .entryActive .entryImg {
+  display: none;
+}
+
+/* ======================== bannerArea ======================== */
+/* line 319, ../scss/groupsplash.scss */
+.bannerArea {
+  clear: both;
+  margin-top: 8px;
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+/* line 328, ../scss/groupsplash.scss */
+.banner-area-text {
+  position: relative;
+  height: 0;
+}
+
+/* line 333, ../scss/groupsplash.scss */
+.banner-area-text-inside {
+  position: absolute;
+  top: -20px;
+  color: #f8f8f8;
+  z-index: 3100;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 28px;
+}
+
+/* line 343, ../scss/groupsplash.scss */
+.bannerArea.type3 {
+  border: none;
+}
+/* line 344, ../scss/groupsplash.scss */
+.bannerArea.type3 img {
+  width: 301px;
+  height: 64px;
+}
+
+/* line 352, ../scss/groupsplash.scss */
+#introText p {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 15px;
+  line-height: 1.6em;
+}
+
+/* line 359, ../scss/groupsplash.scss */
+.main_abv select {
+  display: none;
+}
+/* line 361, ../scss/groupsplash.scss */
+.main_abv select:hover {
+  display: initial;
+}
+
+/* line 366, ../scss/groupsplash.scss */
+#mainArea {
+  margin: 0 auto;
+}
+
+/* line 370, ../scss/groupsplash.scss */
+.entryImg, .entryLink {
+  background-image: url(img/entriesnew_%201176x82.jpg);
+}
+
+/* line 375, ../scss/groupsplash.scss */
+#main_vcc .entryImg, #main_vcc .entryLink {
+  background-image: url(img/Volvo%20Cars.JPG);
+}
