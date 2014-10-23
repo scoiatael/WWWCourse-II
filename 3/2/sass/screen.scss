@@ -1,0 +1,100 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+//@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900italic&subset=latin-ext,latin);
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+     -moz-transition: $value;
+      -ms-transition: $value;
+  -webkit-transition: $value;
+          transition: $value;
+}
+
+body {
+  min-width: 400px;
+  background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%);
+  font-family: "Source Sans Pro", sans-serif;
+  padding-top: 20px;
+}
+
+p {
+  margin: 20px;
+}
+
+ul {
+//  list-style-image: url('http://upload.wikimedia.org/wikipedia/commons/1/16/30x-Gear.png');
+  li {
+    margin-top: 20px;
+  }
+}
+
+h1,h2,h3,h4 {
+  margin: 40px;
+  font-size: larger;
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 40%;
+    margin: 10px;
+    background: black;
+  }
+}
+
+.page-wrapper {
+  width: calc(80% - 100px);
+  position: relative;
+  margin: 0px auto;
+}
+
+@media (min-width: 1200px) {
+  .page-wrapper {
+    @include flexbox();
+  }
+}
+
+a:hover {
+  background-color: red;
+  @include transition(all 1s);
+}
+
+.page-wrapper > * {
+  padding: 10px;
+  display: block;
+}
+
+:first-letter {
+  font-size: larger;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.intro {
+  background: linear-gradient(to bottom, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); /* W3C */
+}
+
+@media (min-width: 1200px) {
+  #zen-supporting {
+    width: 200%;
+  }
+}
+
+.sidebar {
+  min-width: 200px;
+}
