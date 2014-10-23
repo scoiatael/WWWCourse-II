@@ -38,7 +38,7 @@ a {
     font-size: 13px;
     font-family: Arial, Helvetica, Sans-Serif;
   }
-  background: url(img/mainBg.gif) no-repeat;
+  background: url(../img/mainBg.gif) no-repeat;
   overflow: hidden;
 }
 
@@ -153,7 +153,7 @@ a {
   width: 202px;
   height: 89px;
   display: block;
-  background: url(img/entryBg.gif);
+  background: url(../img/entryBg.gif);
   padding: 5px 0 0 5px;
 }
 
@@ -259,7 +259,7 @@ a {
 
 /* ------------------------ entry mosueover ------------------------ */
 
-*:hover {
+#main_abv:hover {
   .entryObj {
     opacity: 0.4;
     filter: alpha(opacity = 40);
@@ -338,6 +338,7 @@ a {
   cursor: pointer;
   font-size: 14px;
   margin-left: 28px;
+  left: calc(50% - 450px);
 }
 
 .bannerArea.type3 {
@@ -368,11 +369,11 @@ a {
 }
 
 .entryImg, .entryLink {
-  background-image: url(img/entriesnew_%201176x82.jpg);
+  background-image: url(../img/entriesnew_%201176x82.jpg);
 }
 
 #main_vcc {
   .entryImg, .entryLink {
-    background-image: url(img/Volvo%20Cars.JPG);
+    background-image: url(../img/Volvo%20Cars.JPG);
   }
 }

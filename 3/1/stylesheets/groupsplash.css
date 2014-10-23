@@ -40,7 +40,7 @@ a img {
 #mainArea {
   width: 913px;
   margin-top: 20px;
-  background: url(img/mainBg.gif) no-repeat;
+  background: url(../img/mainBg.gif) no-repeat;
   overflow: hidden;
 }
 /* line 37, ../scss/groupsplash.scss */
@@ -173,7 +173,7 @@ a img {
   width: 202px;
   height: 89px;
   display: block;
-  background: url(img/entryBg.gif);
+  background: url(../img/entryBg.gif);
   padding: 5px 0 0 5px;
 }
 
@@ -284,31 +284,31 @@ a img {
 
 /* ------------------------ entry mosueover ------------------------ */
 /* line 263, ../scss/groupsplash.scss */
-*:hover .entryObj {
+#main_abv:hover .entryObj {
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
 /* line 268, ../scss/groupsplash.scss */
-*:hover .active .entryObj {
+#main_abv:hover .active .entryObj {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 /* line 272, ../scss/groupsplash.scss */
-*:hover .active .entryImg {
+#main_abv:hover .active .entryImg {
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
 /* line 276, ../scss/groupsplash.scss */
-*:hover .active select {
+#main_abv:hover .active select {
   display: block;
 }
 /* line 281, ../scss/groupsplash.scss */
-*:hover #main_vcc .entryLink {
+#main_abv:hover #main_vcc .entryLink {
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
 /* line 285, ../scss/groupsplash.scss */
-*:hover #main_vcc .active .entryLink {
+#main_abv:hover #main_vcc .active .entryLink {
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -369,19 +369,20 @@ a img {
   cursor: pointer;
   font-size: 14px;
   margin-left: 28px;
+  left: calc(50% - 450px);
 }
 
-/* line 343, ../scss/groupsplash.scss */
+/* line 344, ../scss/groupsplash.scss */
 .bannerArea.type3 {
   border: none;
 }
-/* line 344, ../scss/groupsplash.scss */
+/* line 345, ../scss/groupsplash.scss */
 .bannerArea.type3 img {
   width: 301px;
   height: 64px;
 }
 
-/* line 352, ../scss/groupsplash.scss */
+/* line 353, ../scss/groupsplash.scss */
 #introText p {
   text-align: center;
   font-size: 13px;
@@ -389,26 +390,26 @@ a img {
   line-height: 1.6em;
 }
 
-/* line 359, ../scss/groupsplash.scss */
+/* line 360, ../scss/groupsplash.scss */
 .main_abv select {
   display: none;
 }
-/* line 361, ../scss/groupsplash.scss */
+/* line 362, ../scss/groupsplash.scss */
 .main_abv select:hover {
   display: initial;
 }
 
-/* line 366, ../scss/groupsplash.scss */
+/* line 367, ../scss/groupsplash.scss */
 #mainArea {
   margin: 0 auto;
 }
 
-/* line 370, ../scss/groupsplash.scss */
+/* line 371, ../scss/groupsplash.scss */
 .entryImg, .entryLink {
-  background-image: url(img/entriesnew_%201176x82.jpg);
+  background-image: url(../img/entriesnew_%201176x82.jpg);
 }
 
-/* line 375, ../scss/groupsplash.scss */
+/* line 376, ../scss/groupsplash.scss */
 #main_vcc .entryImg, #main_vcc .entryLink {
-  background-image: url(img/Volvo%20Cars.JPG);
+  background-image: url(../img/Volvo%20Cars.JPG);
 }
