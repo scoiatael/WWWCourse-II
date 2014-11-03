@@ -23,7 +23,7 @@ function checkForm()
   if(isNaN(Number(PESELDate))) errors.push('PESEL must begin with date before 2000s');
   if(Number(PESELDate) !== Number(Data) ) errors.push('PESEL date must match birthdate');
   console.log(PESELDate, Data);
-  if(Email.indexOf('@') === -1 || Email.indexOf('.') === -1) errors.push('Email must be valid');
+  if(!/[-_.\w]+@[-_.\w]+/g.test(Email)) errors.push('Email must be valid');
   if(!Plec) errors.push('sex must be set');
   if(Miasto === "0") errors.push('city must be chosen');
   console.log(Miasto);

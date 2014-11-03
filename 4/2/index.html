@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Simple Table Maker</title>
+<script language="javascript" type="text/javascript" src="tableMaker.js">
+</script>
+</head>
+<body>
+<div id="table">Please wait..</div>
+<script language="javascript" type="text/javascript">
+//var t = TableMaker([[1,2,3],[4,5]], "table", { border:"1px" });
+//var t = TableMaker([[1,2,3],[4,5]], "table", { spacing:"20" });
+//var t = TableMaker([[1,2,3],[4,5]], "table", { padding:"10" });
+//var t = TableMaker([[1,2,3],[4,5]], "table", { border:"1px", spacing:"20" });
+var t = TableMaker([[1,2,3],[4,5]], "table", { border:"1px", spacing:"20", padding:"10" });
+//var t = TableMaker([[1,2,3],[4,5]], "table");
+setTimeout(t.generate.bind(t), 1000);
+</script>
+</body>
+</html>
