@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery UI Dialog - Modal form</title>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="dialog-form" title="Create new user">
+<p class="validateTips">All form fields are required.</p>
+<form>
+<fieldset>
+<label for="name">Full Name</label>
+<input type="text" name="first_name" id="first_name" value="Jane" class="text ui-widget-content ui-corner-all"/>
+<input type="text" name="last_name" id="last_name" value="Smith" class="text ui-widget-content ui-corner-all"/>
+<label for="email">Email</label>
+<input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all"/>
+<label for="email">Region</label>
+<input type="text" name="city" id="city" value="Washington" class="text ui-widget-content ui-corner-all"/>
+<input type="text" name="region_code" id="region_code" value="11-111" class="text ui-widget-content ui-corner-all"/>
+<label for="email">Birthdate</label>
+<input type="text" name="birthdate" id="birthdate" value="01-12-1312" class="text ui-widget-content ui-corner-all"/>
+<!-- Allow form submission with keyboard without duplicating the dialog button -->
+<input type="submit" tabindex="-1" style="position:absolute; top:-1000px"/>
+</fieldset>
+</form>
+</div>
+
+<div id="dialog-confirm" title="Empty the recycle bin?">
+  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
+</div>
+
+<div id="users-contain" class="ui-widget">
+<h1>Existing Users:</h1>
+<table id="users" class="ui-widget ui-widget-content">
+<thead>
+<tr class="ui-widget-header ">
+<th>First Name</th>
+<th>Last Name</th>
+<th>City</th>
+<th>Region Code</th>
+<th>Birthdate</th>
+<th>Remove?</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+<button id="create-user">Create new user</button>
+<script src="script.js"></script>
+</body>
+</html>
