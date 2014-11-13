@@ -4,6 +4,7 @@ var INTERVAL = 6000;
 var MIN = 0;
 var MAX = 9;
 var $slider = $('#slider');
+var $show = $("#even");
 var _slide = true;
 var _interval = window.setInterval(function () {
   if(_slide) {
@@ -14,24 +15,15 @@ var _interval = window.setInterval(function () {
   }
 }, INTERVAL);
 
-$(".kittenContainer > *").fadeOut();
 $("#even").fadeIn();
 
 var switchKitten = true;
 function updateKitten() {
   var val = $slider.slider('option', 'value');
-  var hide, show;
-  if (switchKitten) {
-    hide = $("#even");
-    show = $("#odd");
-    switchKitten = false;
-  } else {
-    show = $("#even");
-    hide = $("#odd");
-    switchKitten = true;
-  }
-  hide.hide();
-  show.fadeIn().attr('src', 'http://placekitten.com/g/200/30'+val);
+  $show.hide();
+  $show.attr('src', 'http://placekitten.com/g/200/30'+val).on('load', function() {
+    if(val == $slider.slider('option', 'value')) $show.fadeIn();
+  });
 }
 
 $slider.slider({

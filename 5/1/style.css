@@ -14,6 +14,12 @@ body {
   width: 300px;
 }
 
+#even {
+  margin: auto;
+  display: block;
+}
+
+
 .stopped {
   background-color: #f0f0f0;
 }
