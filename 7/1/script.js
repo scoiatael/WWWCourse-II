@@ -17,14 +17,13 @@ var loadNewContent = function() {
 
   var oReq = new XMLHttpRequest();
   var transferComplete = function () {
-    console.log("Loaded text", this.responseXML, this.responseText);
     $text.text(this.responseXML);
   };
   oReq.onload = transferComplete;
   oReq.open("get", (path + ".txt"), true);
   oReq.send();
 
-  $img.attr('src', path + ".jpg");
+  $img.attr('src', path + ".png");
 };
 
 loadNewContent();
