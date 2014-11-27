@@ -15,7 +15,7 @@ var loadNewContent = function() {
   var path = "data/" + selected;
   console.log("getting data for " + path);
 
-  $text.load(path + "/text.html #" + selected);
+  $text.load("data/text.html #" + selected);
   $img.attr('src', path + ".png");
 };
 
