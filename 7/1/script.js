@@ -6,6 +6,7 @@ var $text = $('p#text').addClass('jQueried');
 
 var loadNewContent = function() {
   var path = "data/" + $(this).find("option:selected").value;
+  console.log("getting data for " + path);
 
   var oReq = new XMLHttpRequest();
   var transferComplete = function () {
@@ -19,7 +20,7 @@ var loadNewContent = function() {
 };
 
 loadNewContent();
-$select.on("change",loadNewContent() );
+$select.on("change",loadNewContent );
 
 });
 
