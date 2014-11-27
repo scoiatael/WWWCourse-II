@@ -6,7 +6,7 @@ var $text = $('p#text').addClass('jQueried');
 
 var loadNewContent = function() {
   var selected = $(this).find("option:selected").val();
-  if(not selected) return;
+  if(! selected) return;
 
   var path = "data/" + selected;
   console.log("getting data for " + path);
