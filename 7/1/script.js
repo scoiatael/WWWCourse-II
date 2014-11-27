@@ -5,7 +5,7 @@ var $img = $('img#img').addClass('jQueried');
 var $text = $('p#text').addClass('jQueried');
 
 var loadNewContent = function() {
-  var path = "data/" + $(this).find("option:selected").value;
+  var path = "data/" + $(this).find("option:selected").val();
   console.log("getting data for " + path);
 
   var oReq = new XMLHttpRequest();
