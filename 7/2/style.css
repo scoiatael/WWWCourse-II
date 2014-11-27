@@ -1,0 +1,26 @@
+body {
+  font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+  font-size: 62.5%;
+}
+
+#content {
+  margin: 2em auto;
+  width: 600px;
+}
+
+.kittenContainer {
+  margin: 2em auto;
+  display: block;
+  width: 300px;
+}
+
+#even {
+  margin: auto;
+  display: block;
+}
+
+
+.stopped {
+  background-color: #f0f0f0;
+}
+
