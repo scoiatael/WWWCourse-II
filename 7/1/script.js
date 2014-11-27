@@ -1,8 +1,8 @@
 $(function() {
 
-var $select = $('select #miasta');
-var $img = $('img #img');
-var $text = $('p #text');
+var $select = $('select #miasta').class('jQueried');
+var $img = $('img #img').class('jQueried');
+var $text = $('p #text').class('jQueried');
 
 var loadNewContent = function() {
   var path = "data/" + $(this).find("option:selected").value;
