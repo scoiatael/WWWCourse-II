@@ -17,8 +17,8 @@ var loadNewContent = function() {
 
   var oReq = new XMLHttpRequest();
   var transferComplete = function () {
-    console.log("Loaded text", oReq.responseXML, oReq.responseText);
-    $text.text(oReq.responseXML);
+    console.log("Loaded text", this.responseXML, this.responseText);
+    $text.text(this.responseXML);
   };
   oReq.onload = transferComplete;
   oReq.open("get", (path + ".txt"), true);
