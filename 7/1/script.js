@@ -20,7 +20,7 @@ var loadNewContent = function() {
     console.log("Loaded text", oReq.responseXML, oReq.responseText);
     $text.text(oReq.responseXML);
   };
-  oReq.upload.addEventListener("load", transferComplete, false);
+  oReq.onload = transferComplete;
   oReq.open("get", (path + ".txt"), true);
   oReq.send();
 
