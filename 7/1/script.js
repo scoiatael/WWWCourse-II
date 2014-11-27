@@ -5,7 +5,7 @@ var $img = $('img #img');
 var $text = $('p #text');
 
 var loadNewContent = function() {
-  var path = "data/" + $select.val();
+  var path = "data/" + $(this).find("option:selected").value;
 
   var oReq = new XMLHttpRequest();
   var transferComplete = function () {
