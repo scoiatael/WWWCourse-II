@@ -4,7 +4,7 @@ $(function() {
 
 var $select = $('select#miasta').addClass('jQueried');
 var $img = $('img#img').addClass('jQueried');
-var $text = $('p#text').addClass('jQueried');
+var $text = $('span#text').addClass('jQueried');
 
 var loadNewContent = function() {
   var selected = $(this).find("option:selected").val();
