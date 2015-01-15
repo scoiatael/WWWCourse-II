@@ -1,6 +1,36 @@
 express = require("express")
 app = express()
 
+suggestions = [
+  "ActionScript",
+  "AppleScript",
+  "Asp",
+  "BASIC",
+  "C",
+  "C++",
+  "Clojure",
+  "COBOL",
+  "ColdFusion",
+  "Erlang",
+  "Fortran",
+  "Groovy",
+  "Haskell",
+  "Java",
+  "JavaScript",
+  "Lisp",
+  "Perl",
+  "PHP",
+  "Python",
+  "Ruby",
+  "Scala",
+  "Scheme"
+]
+
+app.get "/names", (req, res) ->
+  console.log "Searching for", req.query.query
+  res.status(200).json suggestions.filter (elem) ->
+    new RegExp(req.query.query).exec elem
+
 isOkDate = (date) ->
   return false unless date
   nDate = new Date(date)
