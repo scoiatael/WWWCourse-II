@@ -12,7 +12,7 @@ function testAPI() {
       console.log("Logging out");
       document.getElementById('status').innerHTML = 'Please log ' +
         'into Facebook.';
-    },1000);
+    },5000);
   });
   FB.api('/me/picture', function(response) {
     console.log("Got ", response, "to picture request");
